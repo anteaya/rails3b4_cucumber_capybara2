@@ -1,0 +1,17 @@
+1277649038
+Application	/home/ugis/Desktop/cucumber/config/application.rb	  class Application 
+ApplicationController	/home/ugis/Desktop/cucumber/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	/home/ugis/Desktop/cucumber/app/helpers/application_helper.rb	module ApplicationHelper
+CreatePosts	/home/ugis/Desktop/cucumber/db/migrate/20100627140350_create_posts.rb	class CreatePosts 
+Cucumber	/home/ugis/Desktop/cucumber/config/application.rb	module Cucumber
+NavigationHelpers	/home/ugis/Desktop/cucumber/features/support/paths.rb	module NavigationHelpers
+Post	/home/ugis/Desktop/cucumber/app/models/post.rb	class Post 
+PostsController	/home/ugis/Desktop/cucumber/app/controllers/posts_controller.rb	class PostsController 
+WithinHelpers	/home/ugis/Desktop/cucumber/features/step_definitions/web_steps.rb	module WithinHelpers
+create	/home/ugis/Desktop/cucumber/app/controllers/posts_controller.rb	  def create
+down	/home/ugis/Desktop/cucumber/db/migrate/20100627140350_create_posts.rb	  def self.down
+new	/home/ugis/Desktop/cucumber/app/controllers/posts_controller.rb	  def new
+path_to	/home/ugis/Desktop/cucumber/features/support/paths.rb	  def path_to
+show	/home/ugis/Desktop/cucumber/app/controllers/posts_controller.rb	  def show
+up	/home/ugis/Desktop/cucumber/db/migrate/20100627140350_create_posts.rb	  def self.up
+with_scope	/home/ugis/Desktop/cucumber/features/step_definitions/web_steps.rb	  def with_scope

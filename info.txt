@@ -1,0 +1,42 @@
+rvm use ruby-1.8.7-p299
+
+rvm gemset create cucumber_capybara_test
+
+rvm gemset use cucumber_capybara_test
+
+gem install bundler --no-ri --no-rdoc
+
+gem install rails --pre --no-ri --no-rdoc
+
+rails new cukes3b4
+
+cd cukes3b4
+
+edit Gemfile:
+group :test do
+  gem 'capybara'	  # DSL for interacting with a web application
+  gem 'database_cleaner'  # original use case was to ensure a clean state during tests
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'ZenTest'           # for autotest
+  gem 'redgreen'          # for color output
+end
+
+bundle install
+
+http://github.com/aslakhellesoy/cucumber-rails/blob/master/README.rdoc
+rails g cucumber:install --capybara
+
+config/cucumber.yml << --color (@default)
+
+rm -R test/
+
+rake db:migrate
+
+AUTOFEATURE=true autotest
+
+
+
+
+
+
